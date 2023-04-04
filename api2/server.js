@@ -8,14 +8,14 @@ const app = express(),
 const todos = [{
   todo: "산책하기",
   category: "운동",
-  isComplete: true
+  isComplete: "Yes"
   }];
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../my-app/build')));
 
 app.get('/api2/todos', (req, res) => {
-  console.log('api/todos called!')
+  console.log('api2/todos called!')
   res.json(todos);
 });
 

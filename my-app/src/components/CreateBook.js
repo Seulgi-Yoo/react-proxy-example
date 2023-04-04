@@ -12,6 +12,7 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
                             onChange={(e) => onChangeForm(e)} 
                             name="book" 
                             placeholder="book" 
+                            required
                         />
                     </div>
                     <div className="input-group">
@@ -21,6 +22,7 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
                             onChange={(e) => onChangeForm(e)} 
                             name="category" 
                             placeholder="category" 
+                            required
                         />
                     </div>
                     <div className="input-group">
@@ -29,7 +31,8 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
                             type="text" 
                             onChange={(e) => onChangeForm(e)} 
                             name="author"
-                            placeholder="author" 
+                            placeholder="author"
+                            required 
                         />
                     </div>
                     <button 

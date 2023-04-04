@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body, html {
   margin: 0;
   height:100%; 
@@ -25,6 +30,16 @@ body, html {
   color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 2px 2px 4px rgb(158, 178, 228);
+}
+
+.create-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-wrapper {
+  display: flex;
 }
 
 .form-wrapper{
@@ -78,6 +93,16 @@ body, html {
   padding: 0.2rem 1rem 0.2rem 1rem;
   border: 1px solid rgb(205, 205, 205);
   border-radius: 0.2rem;
+  text-align: center;
+}
+
+.input-group select {
+  height: 30px;
+  width: 150px;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 0.2rem;
+  text-align: center;
 }
 
 .input-group input:focus {
@@ -104,14 +129,16 @@ button {
 }
 
 .display-box {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   border: none;
   border-bottom: 1px solid rgba(158, 178, 228, 0.5);
 }
 
 .display-board {
-  width: 350px;
+  /* min-width: 350px; */
   height: 30px;
   padding: 1rem;
   display: flex;
@@ -125,6 +152,11 @@ button {
 
 .get-button{
   float: right;
+  display: flex;
+}
+
+.get-button > button {
+  margin: 0 5px;
 }
 
 .table-wrapper {
@@ -157,9 +189,13 @@ th, td {
   border-bottom: 0.5px solid #444444;
 }
 
-.odd:hover {
+/* .odd:hover {
   background-color: rgb(203, 218, 255);
   transition: 1s ease;
+} */
+
+.odd {
+  background-color: rgb(203, 218, 255);
 }
 
 footer {
